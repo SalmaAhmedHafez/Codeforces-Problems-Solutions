@@ -1,0 +1,44 @@
+/*
+Author : Salma Hafez
+
+0 0 0
+0   0
+0   0
+0 0 0
+
+*/
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+#define endl '\n'
+#define ull unsigned long long 
+#define ll long long
+#define int ll
+ull INF = (1ULL << 32);
+
+// permutation 
+#define n_perm next_permutation
+#define p_perm prev_permutation 
+#define vn_perm(x) next_permutation(all(x))
+#define vp_perm(x) prev_permutation(all(x))
+
+
+void display(vector<int> a, int n){
+   
+}
+signed main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    //cout << fixed << setprecision(10);
+    int t, n;
+    cin >> t;
+    string s;
+    while(t--){
+        cin >> n >> s;
+        sort(s.begin(), s.end());
+        cout << s[n-1] - 'a' + 1 << endl;
+    }
+    return 0;
+}
